@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font: 2vw  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+    text-transform: capitalize;
+}
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vh;
+}
+.logo i{
+    font-size: 4vw;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap:1em;
+}
+li{
+    cursor: pointer;
+    padding: 1em;
+    font-weight: bold;
+}
+li:hover{
+    transition: 50ms;
+    color: #ffdf70;
+}
+.home{
+    height: 50vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home .text{
+    width: 40%;
+    line-height: 1.5em;
+}
+.text h2{
+    text-transform: uppercase;
+    padding-bottom: 1.5vh;
+    color: #ffdf70;
+}
+
+.text button{
+    padding: 0.50vw;
+    margin-top: 1em;
+    border-radius: 10px;
+    font:  1.5vw  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+}
+.text button:hover{
+    background-color: #ffdf70;
+}
+.selected-img{
+    height: 50vh; 
+}
+.images{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+}
+.images img{
+    height: 14vh;
+   cursor: pointer;
+   transition: 50ms;
+}
+.images img:hover{
+    scale: 1.2;
+}
+.active{
+    border: 1px solid white;
+}
